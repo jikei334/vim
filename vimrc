@@ -46,6 +46,7 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'wesleyche/SrcExpl'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'soramugi/auto-ctags.vim'
+NeoBundle 'scrooloose/syntastic'
 NeoBundleLazy "majutsushi/tagbar", {
       \ "autoload": { "commands": ["TagbarToggle"] }}
 NeoBundleLazy "wesleyche/SrcExpl", {
@@ -90,3 +91,5 @@ if ! empty(neobundle#get("SrcExpl"))
   nn <silent> [srce]p :call g:SrcExpl_PrevDef()<CR>
 endif
 
+" syntastic
+let g:syntastic_python_checkers = ['pyflakes', 'pep8']
