@@ -1,0 +1,167 @@
+[[plugins]]
+repo='scrooloose/nerdtree'
+[[plugins]]
+repo='jistr/vim-nerdtree-tabs'
+[[plugins]]
+repo='tpope/vim-commentary'
+[[plugins]]
+repo='tpope/vim-fugitive'
+[[plugins]]
+repo='ctrlpvim/ctrlp.vim'
+[[plugins]]
+repo='vim-airline/vim-airline'
+[[plugins]]
+repo='vim-airline/vim-airline-themes'
+[[plugins]]
+repo='airblade/vim-gitgutter'
+[[plugins]]
+repo='sheerun/vim-polyglot'
+[[plugins]]
+repo='vim-scripts/grep.vim'
+[[plugins]]
+repo='vim-scripts/CSApprox'
+[[plugins]]
+repo='bronson/vim-trailing-whitespace'
+[[plugins]]
+repo='Raimondi/delimitMate'
+[[plugins]]
+repo='majutsushi/tagbar'
+[[plugins]]
+repo='scrooloose/syntastic'
+[[plugins]]
+repo='Yggdroot/indentLine'
+[[plugins]]
+repo='avelino/vim-bootstrap-updater'
+[[plugins]]
+repo='mattn/sonictemplate-vim'
+[[plugins]]
+repo='Shougo/deoplete.nvim'
+hook_add = 'let g:deoplete#enable_at_startup = 1'
+
+[[plugins]]
+repo='Shougo/vimproc.vim'
+hook_post_update = '''
+  if dein#util#_is_windows()
+    let cmd = 'tools\\update-dll-mingw'
+  elseif dein#util#_is_cygwin()
+    let cmd = 'make -f make_cygwin.mak'
+  elseif executable('gmake')
+    let cmd = 'gmake'
+  else
+    let cmd = 'make'
+  endif
+  let g:dein#plugin.build = cmd
+'''
+
+#Vim-Session
+[[plugins]]
+repo='xolox/vim-misc'
+[[plugins]]
+repo='xolox/vim-session'
+
+[[plugins]]
+repo='Shougo/vimshell.vim'
+if = 'v:version >= 703'
+
+#Snippets
+[[plugins]]
+repo='SirVer/ultisnips'
+if = 'v:version >= 704'
+[[plugins]]
+repo='FelikZ/ctrlp-py-matcher'
+if = 'v:version >= 704'
+
+[[plugins]]
+repo='honza/vim-snippets'
+
+#Color
+[[plugins]]
+repo='tomasr/molokai'
+
+#Custom bundles
+#Perl Bundle
+[[plugins]]
+repo='vim-perl/vim-perl'
+[[plugins]]
+repo='c9s/perlomni.vim'
+
+[[plugins]]
+repo='jimenezrick/vimerl'
+
+#Lua Bundle
+[[plugins]]
+repo='xolox/vim-lua-ftplugin'
+[[plugins]]
+repo='xolox/vim-lua-inspect'
+
+#Lisp Bundle
+[[plugins]]
+repo='vim-scripts/slimv.vim'
+
+#Javascript Bundle
+[[plugins]]
+repo='jelera/vim-javascript-syntax'
+
+#HTML Bundle
+[[plugins]]
+repo='hail2u/vim-css3-syntax'
+[[plugins]]
+repo='gorodinskiy/vim-coloresque'
+[[plugins]]
+repo='tpope/vim-haml'
+[[plugins]]
+repo='mattn/emmet-vim'
+
+#OCaml Bundle
+[[plugins]]
+repo='def-lkb/ocp-indent-vim'
+
+#Python Bundle
+# [[plugins]]
+# repo='davidhalter/jedi-vim'
+
+[[plugins]]
+repo = 'Shougo/denite.nvim'
+
+#Haskell Bundle
+[[plugins]]
+repo='eagletmt/neco-ghc'
+[[plugins]]
+repo='dag/vim2hs'
+[[plugins]]
+repo='pbrisbin/vim-syntax-shakespeare'
+
+[[plugins]]
+repo='elixir-lang/vim-elixir'
+[[plugins]]
+repo='carlosgaldino/elixir-snippets'
+
+#Go Lang Bundle
+[[plugins]]
+repo='fatih/vim-go'
+build = ':GoInstallBinaries'
+
+#PHP Bundle
+[[plugins]]
+repo='arnaud-lb/vim-php-namespace'
+
+#scala Bundle
+[[plugins]]
+repo='derekwyatt/vim-scala'
+
+#java Bundle
+[[plugins]]
+repo='artur-shaik/vim-javacomplete2'
+
+[[plugins]]
+repo='tpope/vim-rails'
+[[plugins]]
+repo='tpope/vim-rake'
+[[plugins]]
+repo='tpope/vim-projectionist'
+[[plugins]]
+repo='thoughtbot/vim-rspec'
+[[plugins]]
+repo='ecomba/vim-ruby-refactoring'
+[[plugins]]
+repo='mattn/sonictemplate-vim'

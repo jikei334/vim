@@ -3,8 +3,8 @@
 let g:dein#install_progress_type = 'title'
 let g:dein#enable_notification = 1
 let g:dein#install_log_filename = '~/dein.log'
-let s:toml      = '~/.config/dein/plugins.toml'
-let s:toml_lazy	= '~/.config/dein/plugins_lazy.toml'
+let s:toml      = '~/.config/nvim/dein/plugins.toml'
+let s:toml_lazy	= '~/.config/nvim/dein/plugins_lazy.toml'
 
 let s:path = expand('$CACHE/dein')
 if !dein#load_state(s:path)
