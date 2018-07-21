@@ -120,9 +120,6 @@ repo='def-lkb/ocp-indent-vim'
 # [[plugins]]
 # repo='davidhalter/jedi-vim'
 
-[[plugins]]
-repo = 'Shougo/denite.nvim'
-
 #Haskell Bundle
 [[plugins]]
 repo='eagletmt/neco-ghc'
@@ -165,3 +162,10 @@ repo='thoughtbot/vim-rspec'
 repo='ecomba/vim-ruby-refactoring'
 [[plugins]]
 repo='mattn/sonictemplate-vim'
+
+[[plugins]]
+repo = 'roxma/vim-hug-neovim-rpc'
+on_if = '!has("nvim")'
+
+[[plugins]]
+repo = 'https://github.com/roxma/nvim-yarp'

@@ -38,7 +38,8 @@ let g:vimshell_prompt =  '$ '
 " deoplete.nvim
 " let g:python3_host_prog = expand('$HOME') . '/.pyenv/shims/python'
 " let g:python_host_prog = system('(type pyenv &>/dev/null && echo -n "$(pyenv root)/versions/$(pyenv global | grep python2)/bin/python") || echo -n $(which python2)')
-let g:python_host_prog = '/Users/Kazuki/.pyenv/shims/python2'
+" let g:python_host_prog = '/Users/Kazuki/.pyenv/shims/python2'
+let g:python_host_prog = system('echo -n $(which python2)')
 " let g:python3_host_prog = system('(type pyenv &>/dev/null && echo -n "$(pyenv root)/versions/$(pyenv global | grep python3)/bin/python") || echo -n $(which python3)')
 let g:python3_host_prog = '/Users/Kazuki/.pyenv/shims/python3'
 let g:deoplete#enable_at_startup = 1
